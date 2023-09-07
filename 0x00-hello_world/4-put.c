@@ -1,9 +1,19 @@
-#include <stdio.h>
-/* main is  start point 
- *return 0  give 0
- */
-int main(void)
-{
-	puts("\"Programming is like building a multilingual puzzle");
-	return (0);
-}
+	/*
+	 * question :4 puts.s
+	 * Autour: Stephen Ndungu
+	 */
+
+	#include <stdio.h>
+
+	/**
+	 * main - Prints "Programming is like building a multilingual
+	 *                puzzle, followed by a new line.
+	 *
+	 * Return: Always 0.
+	 */
+	int main(void)
+	{
+		puts("\"Programming is like building a multilingual puzzle");
+
+		return (0);
+	}
