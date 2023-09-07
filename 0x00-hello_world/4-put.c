@@ -1,19 +1,19 @@
-	/*
-	 * question :4 puts.s
-	 * Autour: Stephen Ndungu
-	 */
+/*
+ * File: 4-puts.c
+ * Auth: Ndungu
+ */
 
-	#include <stdio.h>
+#include <stdio.h>
 
-	/**
-	 * main - Prints "Programming is like building a multilingual
-	 *                puzzle, followed by a new line.
-	 *
-	 * Return: Always 0.
-	 */
-	int main(void)
-	{
-		puts("\"Programming is like building a multilingual puzzle");
+/**
+ * main - Prints "Programming is like building a multilingual
+ *                puzzle, followed by a new line.
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+	puts("\"Programming is like building a multilingual puzzle");
 
-		return (0);
-	}
+	return (0);
+}
