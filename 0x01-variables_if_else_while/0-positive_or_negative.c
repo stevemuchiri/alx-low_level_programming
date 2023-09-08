@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include <timee.h>
+#include <time.h>
 /* more  headers  go here */
 
 /* betty style doc for  funtion goes there*/
