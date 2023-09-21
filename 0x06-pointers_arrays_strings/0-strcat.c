@@ -1,18 +1,16 @@
 #include "main.h"
 
 /**
-  *_strcat - main function of the prototype
-  *
-  * @src: Concatenation parameter
-  *
+  * _strcat - main function of the prototype.
+  * @src: Concatenation parameter.
   * @dest: Concatenation parameter
   *
-  * Return: dest
-  */
+  * Return: dest.
+  */  
 
 char *_strcat(char *dest, char *src)
 {
-int k, r;
+	int k, r;
 
 k = 0;
 r = 0;
