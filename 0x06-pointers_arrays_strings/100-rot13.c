@@ -1,30 +1,28 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * rot13 - main function
- *
- * @s: String poiner
- *
- * Return: String function
- */
+ * rot13 - encodes a string using rot13
+ * @s: the string
+ *
+ * Return: the encoded string
+ */
 
 char *rot13(char *s)
 {
-int k, r;
-char data1[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-char datarot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	int i, j;
+	char *letters1 = {"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"};
+	char *letters2 = {"NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm"};
 
-for (k = 0; s[k] != '\0'; k++)
-{
-for (r = 0; r < 52; r++)
-{
-if (s[k] == data1[r])
-{
-s[k] = datarot[r];
-break;
-}
-}
-}
-return (s);
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		for (j = 0; j < 52; j++)
+		{
+			if (s[i] == letters1[j])
+			{
+				s[i] = letters2[j];
+				break;
+			}
+		}
+	}
+	return (s);
 }
