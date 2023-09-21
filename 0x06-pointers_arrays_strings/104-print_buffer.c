@@ -1,47 +1,50 @@
 #include "main.h"
 #include <stdio.h>
+
 /**
- * print_number - print an int numbers
- * @n: number tested
- * Return: Always 0
+ * print_buffer - prints buffer
+ * @b: buffer
+ * @size: size
+ * Return: void
  */
-void print_number(int n)
+
+void print_buffer(char *b, int size)
 {
-	int i, j, digit, digits, power;
-	unsigned int temp, numchar, number;
+	int o, j, i;
 
-	digit = 0;
-	if (n < 0)
-	{
-		_putchar('-');
-		temp = -n;
-	}
-	else
-	{
-		temp = n;
-	}
+	o = 0;
 
-	number = temp;
-
-	while (number >= 10)
+	if (size <= 0)
 	{
-		number = number / 10;
-		digit++;
+		printf("\n");
+		return;
 	}
-	digits = digit + 1;
-	power = 1;
-	i = 1;
+	while (o < size)
+		{
+		j = size - o < 10 ? size - o : 10;
+		printf("%08x: ", o);
+		for (i = 0; i < 10; i++)
+		{
+			if (i < j)
+				printf("%02x", *(b + o + i));
+			else
+				printf("  ");
+			if (i % 2)
+			{
+				printf(" ");
+			}
+		}
+		for (i = 0; i < j; i++)
+		{
+			int c = *(b + o + i);
 
-	while (i < digits)
-	{
-		power = power * 10;
-		i++;
-	}
-	j = power;
-	while (j >= 1)
-	{
-		numchar = (temp / j) % 10;
-		_putchar(numchar + '0');
-		j = j / 10;
+			if (c < 32 || c > 132)
+			{
+				c = '.';
+			}
+			printf("%c", c);
+		}
+		printf("\n");
+		o += 10;
 	}
 }
