@@ -1,12 +1,11 @@
 #include "main.h"
 
 /**
- * print_number - main function
- *
- * @n: Function parameter
+ *print_number - main function.
+ * @n: Function parameter.
  *
  * Return: Always 0.
- */
+ */
 
 void print_number(int n)
 {
