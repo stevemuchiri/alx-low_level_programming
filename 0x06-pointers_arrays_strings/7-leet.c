@@ -1,30 +1,28 @@
 #include "main.h"
 #include <stdio.h>
-
 /**
-  *leet - main function
-  *
-  * @n: Function parameter
-  *
-  *Return: value of n
- */
+ * leet - change vowels to numbers.
+ * @s: analized string.
+ *
+ * Return: String with all vowels changed.
+ */
+char *leet(char *s)
+{
+	char a[] = "aeotlAEOTL";
+	char n[] = "4307143071";
+	int i = 0;
+	int j;
 
-char *leet(char *n)
-{
-int k, r;
-char s1[] = "aAeEoOtTlL";
-char s2[] = "4433007711";
-
-for (k = 0; n[k] != '\0'; k++)
-{
-for (r = 0; r < 10; r++)
-{
-if (n[k] == s1[r])
-{
-n[k] = s2[r];
+	while (*(s + i) != '\0')
+	{
+		for (j = 0; j <= 9; j++)
+		{
+			if (*(s + i) == a[j])
+			{
+				*(s + i) = n[j];
+			}
+		}
+		i++;
+	}
+	return (s);
 }
-}
-}
-return (n);
-}
-
