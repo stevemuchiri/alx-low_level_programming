@@ -1,0 +1,1 @@
+pointers arry and strings
