@@ -13,6 +13,7 @@
 int main(int argc, char *argv[])
 {
 	int sum = 0, i;
+
 	bool hasError = false;
 
 	if (argc == 1)
