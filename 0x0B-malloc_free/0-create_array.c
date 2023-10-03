@@ -9,7 +9,7 @@
  * @c: the character to initalize the  array element with.
  *
  * Return: If size == 0 or the function fails - NULL.
- * 	Otherwise - a pointer to the array.
+ * Otherwise - a pointer to the array.
  */
 char *create_array(unsigned int size, char c)
 {
