@@ -55,7 +55,7 @@ char *_strcpy(char *dest, char *src)
 /**
  * new_dog - creates a new dog
  * @name: name of the dog
- * @age: age of the dog
+ * @age: age of our dog
  * @owner: owner of the dog
  *
  * Return: pointer to the new dog (Success), NULL otherwise
