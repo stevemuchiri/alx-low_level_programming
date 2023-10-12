@@ -5,10 +5,11 @@
 /**
  * print_all - A function that prints a list of values of various types.
  * @format: A string containing format specifiers for the values.
- *           Supported format specifiers: 'c' (char), 
+ *           Supported format specifiers: 'c' (char),
  *           'i' (int), 'f' (float), 's' (string)
  *           Any other characters in the format string are ignored.
  */
+
 void print_all(const char * const format, ...)
 {
 	int i = 0;
@@ -50,4 +51,4 @@ void print_all(const char * const format, ...)
 
 	printf("\n");
 	va_end(list);
-}
+
