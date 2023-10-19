@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void __attri__((constructor)) wolf(void);
+void __attribute__((constructor)) wolf(void);
 
 /**
  *  wolf - Prints a string before execution of the  main.
