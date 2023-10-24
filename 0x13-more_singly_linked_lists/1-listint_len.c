@@ -1,10 +1,10 @@
 #include "lists.h"
 
 /**
- * print_listint - returns the number of elements in a linked listint_t list.
+ * print_listint - Returns the number of elements in a linked listint_t list.
  * @h: A pointer to the head of the list_t list.
  *
- * Return: Number ofelements in the linked list_t list.
+ * Return: Number of elements in the linked list_t list.
  */
 
 size_t listint_len(const listint_t *h)
