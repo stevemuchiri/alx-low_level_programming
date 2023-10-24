@@ -1,0 +1,1 @@
+A linked list is a fundamental data structure used in computer science and programming. It is a collection of elements, each of which contains a reference (or link) to the next element in the sequence. Linked lists are often used to implement various data structures, such as stacks, queues, and dynamic data structures like dynamic arrays.
