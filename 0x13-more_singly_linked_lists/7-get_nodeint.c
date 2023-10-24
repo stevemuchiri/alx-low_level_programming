@@ -7,21 +7,20 @@
  *
  * Return: A pointer to the nth node, or NULL if the node does not exist.
  */
-
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
-	listint_t *tmp;
-	int ret;
+	unsigned int i = 0;
 
-	if (*head == NULL)
-		return (0);
+	while (head != NULL && i < index)
+	{
+		head = head->next;
+		i++;
+	}
 
-	tmp = *head;
-	ret = (*head)->n;
-	*head = (*head)->next;
+	if (i == index)
+	{
+		return (head);
+	}
 
-	free(tmp);
-
-	return (ret);
+	return (NULL);
 }
-
